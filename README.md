@@ -1,49 +1,71 @@
-# ActiveDirectoryLab
+# **Active Directory Lab**
 
-## ⚙️ Languages and Utilities Used
+## ⚙️ **Languages and Utilities Used**
 
-- **Active Directory** 
-- **DHCP**
-- **DNS**
-- **Powershell** 
-- **Virtual Box**
-
-## 📄 Description
-
-This project involves setting up a homelab environment to simulate a larger IT infrastructure. It includes using Active Directory for centralized user and resource management, creating a thousand user accounts using a PowerShell script, and configuring a DHCP server to manage IP address assignments. As well as setting up DNS to resolve hostnames to IP addresses, ensuring seamless communication within the network. This environment serves as a practical learning platform for IT administration and systems management.
+- **Active Directory**  
+- **DHCP**  
+- **DNS**  
+- **PowerShell**  
+- **VirtualBox**  
 
 ---
 
-## Windows Server 2019
-I started by installing Windows Server 2019. I used the ISO file to create a bootable medium and launched the setup on my virtual machine. During the installation, I selected the 'Windows Server 2019 Standard' edition with Desktop Experience. Once the setup was complete, I configured a secure administrator password, renamed the server, and started installing services needed for the project. Such as, Active Directory Domain Services.
+## 📄 **Project Overview**
+
+This homelab project simulates a larger IT infrastructure, showcasing essential system administration tasks. The environment includes:  
+- **Active Directory** for centralized user and resource management.  
+- Automated creation of **1,000 user accounts** using a PowerShell script.  
+- A **DHCP server** to handle IP address assignments.  
+- **DNS** to resolve hostnames to IP addresses, enabling seamless network communication.  
+
+The completed lab serves as a practical platform for learning IT infrastructure management and network configuration.
+
+---
+
+## **Windows Server 2019 Setup**  
+
+To begin, I installed **Windows Server 2019**. Using the ISO file, I created a bootable medium and launched the installation on a virtual machine. I selected the 'Windows Server 2019 Standard' edition with Desktop Experience. After completing the installation, I set up a secure administrator password, renamed the server, and installed essential roles, including **Active Directory Domain Services**.
 
 ![Server Manager](https://i.imgur.com/t8Z8eAX.png)
 
 ---
 
-## Network Connections
-Next, I configured the two network ports on the server. One port was set up for internet access to connect to the external network, while the other was designated for internal use, intended for the future DHCP server. For the internal network, I assigned the IP scheme 172.16.0.1.
+## **Network Connections**  
+
+I configured two network ports on the server:  
+- One port for **internet access**, connecting to the external network.  
+- Another port for **internal use**, intended for the DHCP server.  
+
+For the internal network, I assigned the IP scheme **172.16.0.1**.
 
 ![Network Connections](https://imgur.com/Ld5Egds.png)
 
 ---
 
-## DHCP Server
-I set up the DHCP server and created an IP address scope ranging from 172.16.0.100 to 172.16.0.200. This configuration was later used to assign an IP address automatically to my Client 1 virtual machine.
+## **DHCP Server Configuration**  
+
+I set up a **DHCP server** and configured an IP address scope from **172.16.0.100 to 172.16.0.200**. This ensured that devices on the internal network, such as the Client 1 virtual machine, could receive IP addresses automatically.
 
 ![DHCP](https://imgur.com/PjrttTV.png)
 
 ---
-## Powershell User Creation
-Next, I created 1,000 user accounts using a PowerShell script to automate the process. Once the script completed, I verified that all the users were successfully added to Active Directory.
 
-![Powershell Script](https://imgur.com/QbpY5aj.png)
+## **User Creation via PowerShell**  
+
+Using a **PowerShell script**, I automated the creation of **1,000 user accounts**. After running the script, I verified that all user accounts were successfully added to **Active Directory**.
+
+![Powershell Script](https://imgur.com/QbpY5aj.png)  
 
 ![User Verification](https://imgur.com/g4ah5VH.png)
+
 ---
-## Completed Virtual Machines
-The VirtualBox setup, as shown, highlights both the domain controller and client machine successfully configured and networked. 
+
+## **Completed Virtual Machines**  
+
+The final setup in **VirtualBox** shows both the **domain controller** and the **Client 1 virtual machine** fully configured and networked. This validates the successful integration of all components within the homelab environment.  
 
 ![Virtual Box](https://imgur.com/ggXvhxm.png)
 
 ---
+
+This lab provides a hands-on approach to learning and refining IT administration skills, including user management, network configuration, and service deployment.  
