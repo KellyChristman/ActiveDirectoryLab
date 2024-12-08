@@ -30,6 +30,20 @@ Next, I configured the two network ports on the server. One port was set up for 
 
 ## DHCP Server
 I set up the DHCP server and created an IP address scope ranging from 172.16.0.100 to 172.16.0.200. This configuration was later used to assign an IP address automatically to my Client 1 virtual machine.
+
 ![DHCP](https://imgur.com/PjrttTV.png)
+
+---
+## Powershell User Creation
+Next, I created 1,000 user accounts using a PowerShell script to automate the process. Once the script completed, I verified that all the users were successfully added to Active Directory.
+
+![Powershell Script](https://imgur.com/QbpY5aj.png)
+
+![User Verification](https://imgur.com/g4ah5VH.png)
+---
+## Completed Virtual Machines
+The VirtualBox setup, as shown, highlights both the domain controller and client machine successfully configured and networked. 
+
+![Virtual Box](https://imgur.com/ggXvhxm.png)
 
 ---
